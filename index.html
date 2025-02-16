@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syneroid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <header>
+        <h1 class="neon-text">Syneroid</h1>
+        <nav>
+            <button class="nav-btn" onclick="showSection('home')">Home</button>
+            <button class="nav-btn" onclick="showSection('showcase')">Showcase</button>
+            <button class="nav-btn" onclick="showSection('terms')">Terms</button>
+            <button class="nav-btn" onclick="window.open('https://discord.gg/Fab6kK5f', '_blank')">Discord</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="content active">
+            <h2>Welcome to Syneroid</h2>
+            <p>The most powerful script utility.</p>
+            <button id="downloadBtn" class="download-btn">Download Now</button>
+        </section>
+
+        <section id="showcase" class="content">
+            <h2>Showcase</h2>
+            <video controls>
+                <source src="Video/showcase.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="terms" class="content">
+            <h2>Terms of Service</h2>
+            <p>By using this software, you agree to the following terms...</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

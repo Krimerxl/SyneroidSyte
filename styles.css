@@ -1,0 +1,103 @@
+@import url('/Users/Krimer/Documents/syneroidsite/images/fone.jpg');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+body {
+    background: black;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('/Users/Krimer/Documents/syneroidsite/images/fone.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px);
+    opacity: 0.5;
+    z-index: -1;
+    animation: moveBg 10s infinite linear;
+}
+
+@keyframes moveBg {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+.neon-text {
+    font-size: 40px;
+    text-shadow: 0 0 20px #ff00ff;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.nav-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #ff00ff;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+.content {
+    display: none;
+    padding: 40px;
+}
+
+.active {
+    display: block;
+}
+
+.download-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    background: #ff00ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    box-shadow: 0 0 15px #ff00ff;
+    transform: scale(1.1);
+}
+
+video {
+    width: 80%;
+    margin-top: 20px;
+    border: 3px solid #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px #ff00ff;
+    opacity: 0.5;
+}
